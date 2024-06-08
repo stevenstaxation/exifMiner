@@ -1,0 +1,199 @@
+/* Globals */
+* {
+  font-family: "Catamaran", sans-serif;
+}
+
+/* Modals */
+.modal {
+  background: rgba(0, 0, 0, 0.25);
+}
+.modal-header,
+.modal-content,
+.modal-body,
+.modal-footer,
+.modal-body > table > tbody > tr > td {
+  background-color: rgba(184, 184, 184, 1);
+}
+
+[data-bs-theme="dark"] .modal-header,
+[data-bs-theme="dark"] .modal-content,
+[data-bs-theme="dark"] .modal-body,
+[data-bs-theme="dark"] .modal-footer,
+[data-bs-theme="dark"] .modal-body > table > tbody > tr > td {
+  background-color: rgba(88, 88, 88, 1);
+}
+
+/* Nav Bar */
+.navbar {
+  box-shadow: 12px 8px 16px 1px rgba(0, 0, 0, 0.5);
+  max-height: 48px;
+  background-color: var(--colour-3) !important;
+}
+.dropdown-menu {
+  box-shadow: 12px 8px 16px 1px rgba(0, 0, 0, 0.5);
+  background-color: var(--colour-3) !important;
+}
+.dropdown-menu.dialog {
+  box-shadow: 12px 8px 16px 1px rgba(0, 0, 0, 0.5);
+  background-color: var(--white) !important;
+}
+
+.dropdown-menu .dropdown-item {
+  color: var(--white) !important;
+}
+.dropdown-menu.dialog .dropdown-item {
+  color: var(--colour-3) !important;
+}
+.dropdown-menu .dropdown-item:hover {
+  color: var(--colour-3) !important;
+}
+.dropdown-menu.dialog .dropdown-item:hover {
+  color: var(--white) !important;
+  background-color: var(--colour-3);
+}
+
+.dropdown-item-checked::before {
+  position: absolute;
+  left: 0.125rem;
+  content: "✓";
+  font-weight: 200;
+}
+
+.custom-file {
+  display: none;
+}
+
+/* Drag and Drop area */
+.dragdropfield {
+  display: block;
+  margin-top: 60px;
+  width: 180px;
+}
+#uploadForm {
+  margin-top: 100px;
+}
+#dropZone {
+  border: 5px dashed var(--colour-6);
+}
+#uploadProgress {
+  margin-top: 20px;
+}
+
+/* Main view dividers */
+.thumbmailView,
+.imageView,
+.basicEXIFView,
+.fullEXIFView {
+  margin: 3px 0;
+  border: 1px solid gainsboro;
+}
+.imageView {
+  position: relative;
+  object-fit: fill;
+}
+/* .imageView img {
+  width: auto;
+  height: auto;
+  display: block;
+} */
+
+.basicEXIFView,
+.fullEXIFView {
+  /* border: 2px solid var(--colour-6); */
+  padding-top: 10px;
+}
+
+.EXIFTitle {
+  color: var(--colour-6);
+}
+
+/* .imagePreview_Wrapper {
+  position: relative;
+} */
+
+#previewImageContainer {
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#overlayCanvasR3,
+#overlayCanvasDiag,
+#overlayCanvasAF,
+#overlayCanvasPhi,
+#overlayCanvasHigh,
+#overlayCanvasShadow,
+#overlayMessages {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 20;
+  /* width: 100%; */
+  margin: 0;
+  padding: 0;
+}
+
+#overlayMessage {
+  border: 2px solid yellow;
+}
+
+.sectionTitle {
+  color: red;
+}
+
+#altitude {
+  text-align: right;
+}
+
+#map {
+  height: 500px;
+}
+
+.table {
+  font-size: 14px;
+}
+
+.histogramCanvas {
+  /* border: 1px solid lightgrey; */
+  margin: 5px 0;
+  padding: 5px;
+  max-width: 300px;
+  height: 300px;
+}
+.RGBCanvas {
+  max-width: 300px;
+  height: 400px;
+}
+
+#histogramsBox {
+  border: 1px solid gainsboro;
+  height: 60vh;
+  padding-top: 10px;
+  margin: 3px 0;
+  /* margin-right: 5px !important; */
+}
+
+#histogramStatTable {
+  border: 1px solid gray;
+  font-size: 75%;
+}
+
+.editTagBlock {
+  border-top: 1px gainsboro solid;
+  border-left: 1px gainsboro solid;
+  border-right: 1px gray solid;
+  border-bottom: 1px gray solid;
+  margin-bottom: 10px;
+  padding: 10px 0;
+}
+
+.editTagItem {
+  margin: 0 10px;
+}
+.editTagItem input[type="text"] {
+  border-radius: 5px;
+}

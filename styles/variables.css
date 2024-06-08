@@ -1,0 +1,15 @@
+:root {
+  --colour-1: #6699ff;
+  --colour-2: #669933;
+  --colour-3: #6699cc;
+  --colour-4: #3399ff;
+  --colour-5: #3333ff;
+  --colour-6: #0033cc;
+  --white: #e8e8f8;
+
+  --orangeHighlight: #ffdd44;
+}
+
+.isHidden {
+  display: none;
+}
